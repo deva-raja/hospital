@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+/* general styling */
+html {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+.fab {
+  color: rgb(12, 11, 11);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.cta {
+  text-transform: capitalize;
+}
+
+/* body styling */
+.showcase {
+  width: 100vw;
+  height: 100vh;
+  background: url(images/doctor_child.png);
+  /* background: url(images/masked_doctor.png); */
+  background-size: cover;
+  color: #fff;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+}
+
+/* background video */
+.showcase .bg-video {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* header section */
+.showcase header {
+  grid-row: 1/2;
+  grid-column: 1/1;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+}
+
+.showcase header .nav {
+  position: relative;
+  left: 60px;
+  display: flex;
+  min-width: 450px;
+}
+
+.showcase header .nav > * {
+  color: white;
+  flex: 1 1 50px;
+}
+
+.logo {
+  font-weight: 800;
+  word-spacing: 15px;
+  text-transform: uppercase;
+}
+
+.showcase .content {
+  color: rgb(0, 0, 0);
+  grid-row: 2/3;
+  grid-column: 1/1;
+}
+.showcase footer {
+  grid-row: 3/4;
+  grid-column: 1/1;
+}
+
+/* text section */
+.content {
+  z-index: 10;
+  padding: 40px 100px;
+  font-size: 16px;
+  display: grid;
+  align-content: center;
+}
+
+.content-wrapper{
+  position: relative;
+  bottom: 50px;
+}
+
+.content > * {
+  color: #fff;
+}
+
+.content h2 {
+  font-size: 3.6em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.content h3 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.content p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.content a {
+  display: inline-block;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  border-radius: 100px;
+  transition: all 0.3s ease-in;
+  box-shadow: 5px 5px 2px 1px rgba(12, 12, 12, 0.2);
+}
+.content a:hover {
+  background: #000;
+  color: white;
+}
