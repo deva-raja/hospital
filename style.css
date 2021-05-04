@@ -63,14 +63,19 @@ a {
 }
 
 .showcase header .nav > * {
+  text-transform: capitalize;
   color: white;
   flex: 1 1 50px;
 }
 
+.showcase header .nav > *:hover {
+  color: black;
+}
 .logo {
   font-weight: 800;
   word-spacing: 15px;
   text-transform: uppercase;
+  font-size: 24px;
 }
 
 .showcase .content {
@@ -92,7 +97,7 @@ a {
   align-content: center;
 }
 
-.content-wrapper{
+.content-wrapper {
   position: relative;
   bottom: 50px;
 }
@@ -102,14 +107,15 @@ a {
 }
 
 .content h2 {
-  font-size: 3.6em;
+  /* font-size: 3.6em; */
+  font-size: 4.4em;
   font-weight: 800;
   line-height: 1em;
   text-transform: uppercase;
 }
 
 .content h3 {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 700;
   line-height: 1em;
   text-transform: uppercase;
@@ -133,10 +139,13 @@ a {
   letter-spacing: 2px;
   transition: 0.2s;
   border-radius: 100px;
-  transition: all 0.3s ease-in;
   box-shadow: 5px 5px 2px 1px rgba(12, 12, 12, 0.2);
+  transition: all 0.3s ease-in;
 }
+
 .content a:hover {
   background: #000;
   color: white;
 }
+
+/* footer styling */
