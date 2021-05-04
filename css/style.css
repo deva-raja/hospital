@@ -16,8 +16,7 @@ html {
 .showcase {
   width: 100vw;
   height: 100vh;
-  background: url(images/doctor_child.png);
-  /* background: url(images/masked_doctor.png); */
+  background: url(../images/doctor_child.png);
   background-size: cover;
   color: #fff;
   display: -ms-grid;
@@ -43,14 +42,6 @@ html {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  -ms-grid-column: 1;
-  grid-column: 1/1;
-}
-
-.showcase footer {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
   -ms-grid-column: 1;
   grid-column: 1/1;
 }
@@ -176,11 +167,17 @@ html {
 
 /* footer styling */
 footer {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1fr auto;
       grid-template-columns: auto 1fr auto;
   padding: 30px 80px 20px;
+  z-index: 2;
 }
 
 .fab {

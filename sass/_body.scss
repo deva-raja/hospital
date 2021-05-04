@@ -2,8 +2,8 @@
 .showcase {
   width: 100vw;
   height: 100vh;
-  background: url(images/doctor_child.png);
-  /* background: url(images/masked_doctor.png); */
+  // background: #111;
+  background: url(../images/doctor_child.png);
   background-size: cover;
   color: #fff;
   display: grid;
@@ -23,9 +23,5 @@
 .showcase .content {
   color: rgb(0, 0, 0);
   grid-row: 2/3;
-  grid-column: 1/1;
-}
-.showcase footer {
-  grid-row: 3/4;
   grid-column: 1/1;
 }
